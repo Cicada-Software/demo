@@ -1,0 +1,14 @@
+# This is a basic CI file to show off the features of Cicada
+
+on git.push
+
+echo Hello from (event.provider)!
+
+shell neofetch
+
+echo
+echo Contents of this workflow file:
+
+let filename = "hello_world.ci"
+
+shell cat (filename)
